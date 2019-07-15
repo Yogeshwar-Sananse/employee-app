@@ -1,0 +1,38 @@
+<h1 mat-dialog-title>Register</h1>
+<div mat-dialog-content>
+    <div>
+        <mat-form-field>
+            <input matInput placeholder="Enter Employee Name" [(ngModel)]="employeeData.emp_name">
+        </mat-form-field>
+    </div>
+    <div>
+        <mat-form-field>
+            <input matInput placeholder="Enter Employee Contact" [(ngModel)]="employeeData.emp_contact">
+        </mat-form-field>
+    </div>
+    <div>
+        <mat-form-field>
+            <input matInput placeholder="Enter Employee Email" [(ngModel)]="employeeData.emp_email">
+        </mat-form-field>
+    </div>
+    <div>
+        <mat-form-field>
+            <input matInput placeholder="Enter Employee Address" [(ngModel)]="employeeData.emp_address">
+        </mat-form-field>
+    </div>
+    <div>
+        <mat-form-field>
+            <input matInput placeholder="Enter Employee State" [(ngModel)]="employeeData.emp_state">
+        </mat-form-field>
+    </div>
+    <div>
+        <mat-form-field>
+            <input matInput placeholder="Enter Employee City" [(ngModel)]="employeeData.emp_city">
+        </mat-form-field>
+    </div>
+</div>
+<div mat-dialog-actions>
+    <button mat-button [mat-dialog-close]="employeeData" cdkFocusInitial>Submit</button><!--  -->
+    <button mat-button (click)="cancel()">Cancel</button>
+
+</div>
